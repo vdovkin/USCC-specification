@@ -239,3 +239,43 @@ td.table-input select{
   color: #536279;
   width: 100%;
 }
+
+.swith{
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-swith {
+  font-size: 16px !important;
+  padding: 26px 50px !important;
+  font-weight: 500 !important;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+
+.active {
+  font-size: 16px !important;
+  color: #294063 !important;
+  background-color: #f89c49 !important;
+  padding: 26px 50px !important;
+  font-weight: 500 !important;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+
+.not-active{
+  border: 1px #f89c49 solid;
+}
+
+.not-active:hover {
+  background-color: #294063 !important;
+  color: #f89c49 !important;
+}
