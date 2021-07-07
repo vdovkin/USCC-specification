@@ -163,3 +163,79 @@ footer .footer-links a:hover {
     display: none;
 }
   
+.platform_add_symbol_header {
+  border: 1px solid #536279;
+  border-radius: 5px;
+  display: inline-flex;
+  padding: 0 9px;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.input{
+  padding: 6px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #536279;
+  color: #536279;
+  font-size: 24px;
+  max-width: 500px;
+  margin-bottom: 15px;
+}
+
+
+/* .elements-table td{
+  border-collapse: collapse;
+  margin: 0;
+  text-decoration: none;
+  text-transform: none;
+  box-sizing: border-box;
+  list-style: none;
+  border-radius: 0;
+  line-height: 1.5;
+  color: #536279;
+  font-weight: 300;
+  background-color: #e0e9ee;
+  border-bottom: 1px solid #fff;
+  font-size: 14px;
+  padding: 10px 15px!important;
+} */
+
+.elements-table th{
+  border-collapse: collapse;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  border-radius: 0;
+  font-family: PFDin,sans-serif;
+  line-height: 1;
+  padding: 24px 30px 20px 30px;
+  height: 100%;
+  background-color: #536279;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  white-space: nowrap;
+  font-size: 12px;
+  text-align: center;
+}
+
+td.table-input input{
+  padding: 6px 0;
+  border: none;
+  border-bottom: 1px solid #536279;
+  color: #536279;
+}
+
+td.table-input select{
+  padding: 6px 0;
+  border: none;
+  border-bottom: 1px solid #536279;
+  color: #536279;
+  width: 100%;
+}
