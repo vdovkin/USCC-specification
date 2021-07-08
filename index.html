@@ -7,7 +7,7 @@
   <title>Перевірка наявного сортаменту</title>
 
   <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
   <!-- Custom css -->
   <link rel="stylesheet" href="static/css/style-base.css" />
@@ -87,214 +87,251 @@
         <p>(Наявні групи: колони, балки, в'язі)</p>
         <input type="text" class="input" placeholder="Назва">
         <span class="platform_add_symbol_header">+</span>
-      </div> 
-      <div class="swith">
-        <a class="btn-swith active">Прокатні елементи</a>
-        <a class="btn-swith not-active">Зварні елементи</a>
       </div>
-      
-      <h2>Таблиця прокатних елементів</h2>
-      <table class="elements-table">
-        <thead>
-          <tr>
-            <th>Марка</th>
-            <th>Група конструкцій</th>
-            <th>Вид профілю</th>
-            <th>Сортамент</th>
-            <th>Профіль</th>
-            <th>Марка сталі</th>
-            <th>Маса, т</th>
-          </tr>
-        </thead>
-<tbody>
-  <tr>
-    <td class="table-input"> <input type="text" value="К1"></td>
-    <td class="table-input"> <select>
-      <option value="g1">Колони</option>
-      <option value="g2">Балки</option>
-      <option value="g3">В'язі</option>
-    </select> 
-    <td class="table-input"> <select>
-      <option value="2">Двутавр</option>
-      <option value="1">Швелер</option>
-      <option value="3">Квадратна труба</option>
-      <option value="4">Прямокутна труба</option>
-      <option value="4">Кругла труба</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <select>
-      <option value="s1">ДСТУ 0009-232</option>
-      <option value="s2" selected>ДСТУ 3234-333</option>
-      <option value="s3">ДСТУ 2222-321</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <select>
-      <option value="p1">20</option>
-      <option value="p2" selected>24</option>
-      <option value="p3">30</option>
-      <option value="p4">36</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <select>
-      <option value="m1">C235</option>
-      <option value="m2">C245</option>
-      <option value="m3">C255</option>
-      <option value="m4" selected>C355</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <input type="nubmer" value="45"> 
-  </td>
+      <div class="swith">
+        <div class="btn-swith active" onclick="changeTable('procat')">Прокатні елементи</div>
+        <div class="btn-swith not-active" onclick="changeTable('zvarni')">Зварні елементи</div> 
+      </div>
 
-  </tr>
-  <tr>
-    <td class="table-input"> <input type="text" value="К2"></td>
-    <td class="table-input"> <select>
-      <option value="g1">Колони</option>
-      <option value="g2">Балки</option>
-      <option value="g3">В'язі</option>
-    </select> 
-    </td>
-    <td class="table-input"> <select>
-      <option value="2">Двутавр</option>
-      <option value="1">Швелер</option>
-      <option value="3">Квадратна труба</option>
-      <option value="4">Прямокутна труба</option>
-      <option value="4">Кругла труба</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <select>
-      <option value="s1">ДСТУ 0009-232</option>
-      <option value="s2">ДСТУ 3234-333</option>
-      <option value="s3">ДСТУ 2222-321</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <select>
-      <option value="p1">20</option>
-      <option value="p2">24</option>
-      <option value="p3" selected>30</option>
-      <option value="p4">36</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <select>
-      <option value="m1">C235</option>
-      <option value="m2">C245</option>
-      <option value="m3" selected>C255</option>
-      <option value="m4">C355</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <input type="nubmer" value="11"> 
-  </td>
+      <div class="prokat" id='procatTable'>
+        <h2>Таблиця прокатних елементів<span class="add_symbol">+</span></h2>
+        <br>
+        <table class="elements-table">
+          <thead>
+            <tr>
+              <th>Марка</th>
+              <th>Група конструкцій</th>
+              <th>Вид профілю</th>
+              <th>Сортамент</th>
+              <th>Профіль</th>
+              <th>Марка сталі</th>
+              <th>Маса, т</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-input"> <input type="text" value="К1"></td>
+              <td class="table-input"> <select>
+                  <option value="g1">Колони</option>
+                  <option value="g2">Балки</option>
+                  <option value="g3">В'язі</option>
+                </select>
+              <td class="table-input"> <select>
+                  <option value="2">Двутавр</option>
+                  <option value="1">Швелер</option>
+                  <option value="3">Квадратна труба</option>
+                  <option value="4">Прямокутна труба</option>
+                  <option value="4">Кругла труба</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <select>
+                  <option value="s1">ДСТУ 0009-232</option>
+                  <option value="s2" selected>ДСТУ 3234-333</option>
+                  <option value="s3">ДСТУ 2222-321</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <select>
+                  <option value="p1">20</option>
+                  <option value="p2" selected>24</option>
+                  <option value="p3">30</option>
+                  <option value="p4">36</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <select>
+                  <option value="m1">C235</option>
+                  <option value="m2">C245</option>
+                  <option value="m3">C255</option>
+                  <option value="m4" selected>C355</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <input type="nubmer" value="45">
+              </td>
+              <td>
+                <span class="symbol-copy"><i class="far fa-copy"></i></span>
+              </td>
+              <td>
+                <span class="symbol">-</span>                
+              </td>
 
-  </tr>
-  <tr>
-    <td class="table-input"> <input type="text" value="Б1"></td>
-    <td class="table-input"> <select>
-      <option value="g1">Колони</option>
-      <option value="g2" selected>Балки</option>
-      <option value="g3">В'язі</option>
-    </select> 
-    </td>
-    <td class="table-input"> <select>
-      <option value="2">Двутавр</option>
-      <option value="1">Швелер</option>
-      <option value="3">Квадратна труба</option>
-      <option value="4">Прямокутна труба</option>
-      <option value="4">Кругла труба</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <select>
-      <option value="s1">ДСТУ 0009-232</option>
-      <option value="s2">ДСТУ 3234-333</option>
-      <option value="s3" selected>ДСТУ 2222-321</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <select>
-      <option value="p1">20</option>
-      <option value="p2">24</option>
-      <option value="p3">30</option>
-      <option value="p4" selected>36</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <select>
-      <option value="m1">C235</option>
-      <option value="m2" selected>C245</option>
-      <option value="m3">C255</option>
-      <option value="m4">C355</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <input type="nubmer" value="31"> 
-  </td>
+            </tr>
+            <tr>
+              <td class="table-input"> <input type="text" value="К2"></td>
+              <td class="table-input"> <select>
+                  <option value="g1">Колони</option>
+                  <option value="g2">Балки</option>
+                  <option value="g3">В'язі</option>
+                </select>
+              </td>
+              <td class="table-input"> <select>
+                  <option value="2">Двутавр</option>
+                  <option value="1">Швелер</option>
+                  <option value="3">Квадратна труба</option>
+                  <option value="4">Прямокутна труба</option>
+                  <option value="4">Кругла труба</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <select>
+                  <option value="s1">ДСТУ 0009-232</option>
+                  <option value="s2">ДСТУ 3234-333</option>
+                  <option value="s3">ДСТУ 2222-321</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <select>
+                  <option value="p1">20</option>
+                  <option value="p2">24</option>
+                  <option value="p3" selected>30</option>
+                  <option value="p4">36</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <select>
+                  <option value="m1">C235</option>
+                  <option value="m2">C245</option>
+                  <option value="m3" selected>C255</option>
+                  <option value="m4">C355</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <input type="nubmer" value="11">
+              </td>
+              <td>
+                <span class="symbol-copy"><i class="far fa-copy"></i></span>
+              </td>
+              <td>
+                <span class="symbol">-</span>                
+              </td>
 
-  </tr>
-</tbody>
-      </table>
-      <h2>Таблиця зварних елементів</h2>
-      <table class="elements-table">
-        <thead>
-          <tr>
-            <th>Марка</th>
-            <th>Вид Перерізу</th>
-            <th>Ширина полиці</th>
-            <th>Товщина полиці</th>
-            <th>Марка сталі полиці</th>
-            <th>Висота стінки</th>
-            <th>Товщина стінки</th>
-            <th>Марка сталі стінки</th>
-            <th>Маса, т</th>
-          </tr>
-        </thead>
-<tbody>
-  <tr>
-    <td class="table-input"> <input type="text" value="Б1"></td>
-    <td class="table-input"> <select>
-      <option value="2">Двутавр</option>
-      <option value="1">Швелер</option>
-      <option value="3">Квадратна труба</option>
-      <option value="4">Прямокутна труба</option>
-      <option value="4">Кругла труба</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <select>
-      <option value="s1">ДСТУ 0009-232</option>
-      <option value="s2" selected>ДСТУ 3234-333</option>
-      <option value="s3">ДСТУ 2222-321</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <select>
-      <option value="p1">20</option>
-      <option value="p2" selected>24</option>
-      <option value="p3">30</option>
-      <option value="p4">36</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <select>
-      <option value="m1">C235</option>
-      <option value="m2">C245</option>
-      <option value="m3">C255</option>
-      <option value="m4" selected>C355</option>
-    </select> 
-  </td>
-  <td class="table-input">
-    <input type="nubmer" value="45"> 
-  </td>
+            </tr>
+            <tr>
+              <td class="table-input"> <input type="text" value="Б1"></td>
+              <td class="table-input"> <select>
+                  <option value="g1">Колони</option>
+                  <option value="g2" selected>Балки</option>
+                  <option value="g3">В'язі</option>
+                </select>
+              </td>
+              <td class="table-input"> <select>
+                  <option value="2">Двутавр</option>
+                  <option value="1">Швелер</option>
+                  <option value="3">Квадратна труба</option>
+                  <option value="4">Прямокутна труба</option>
+                  <option value="4">Кругла труба</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <select>
+                  <option value="s1">ДСТУ 0009-232</option>
+                  <option value="s2">ДСТУ 3234-333</option>
+                  <option value="s3" selected>ДСТУ 2222-321</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <select>
+                  <option value="p1">20</option>
+                  <option value="p2">24</option>
+                  <option value="p3">30</option>
+                  <option value="p4" selected>36</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <select>
+                  <option value="m1">C235</option>
+                  <option value="m2" selected>C245</option>
+                  <option value="m3">C255</option>
+                  <option value="m4">C355</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <input type="nubmer" value="31">
+              </td>
+              <td>
+                <span class="symbol-copy"><i class="far fa-copy"></i></span>
+              </td>
+              <td>
+                <span class="symbol">-</span>                
+              </td>
 
-</tbody>
-      </table>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="zvarni hide" id='zvarniTable'>
+        <h2>Таблиця зварних елементів<span class="add_symbol">+</span></h2>
+        <br>
+        <table class="elements-table">
+          <thead>
+            <tr>
+              <th rowspan="2" colspan="1">Марка</th>
+              <th rowspan="2" colspan="1">Група конструкцій</th>
+              <th rowspan="2" colspan="1">Вид Перерізу</th>
+              <th rowspan="1" colspan="3">Полиця</th>
+              <th rowspan="1" colspan="3">Стінка</th>
+              <th rowspan="2" colspan="1">Маса, т</th>
+            </tr>
+            <tr>
+              <th>Ширина</th>
+              <th>Товщина</th>
+              <th>Марка сталі</th>
+              <th>Висота</th>
+              <th>Товщина</th>
+              <th>Марка сталі</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-input"> <input type="text" value="Б2"></td>
+              <td class="table-input"> <select>
+                <option value="g1">Колони</option>
+                <option value="g2" selected>Балки</option>
+                <option value="g3">В'язі</option>
+              </select>
+            </td>
+              <td class="table-input"> <select>
+                  <option value="1">Двутавровий</option>
+                  <option value="2">Коробчатий</option>
+                </select>
+              </td>
+              <td class="table-input"> <input type="number" value="220"></td>
+              <td class="table-input"> <input type="number" value="12"></td>
+              <td class="table-input">
+                <select>
+                  <option value="m1">C235</option>
+                  <option value="m2" selected>C245</option>
+                  <option value="m3">C255</option>
+                  <option value="m4">C355</option>
+                </select>
+              </td>
+              <td class="table-input"> <input type="number" value="600"></td>
+              <td class="table-input"> <input type="number" value="8"></td>
+              <td class="table-input">
+                <select>
+                  <option value="m1">C235</option>
+                  <option value="m2" selected>C245</option>
+                  <option value="m3">C255</option>
+                  <option value="m4">C355</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <input type="nubmer" value="35">
+              </td>
+              <td>
+                <span class="symbol-copy"><i class="far fa-copy"></i></span>
+              </td>
+              <td>
+                <span class="symbol">-</span>                
+              </td>
+
+          </tbody>
+        </table>
+
+      </div>
 
 
 
