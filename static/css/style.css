@@ -322,3 +322,44 @@ td.table-input select{
   cursor: pointer;
   margin: 2px 6px;
 }
+
+.title_2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #536279;
+  text-transform: uppercase;
+}
+
+.input{
+  margin-top: 10px;
+  padding: 6px 0;
+  border: none;
+  border-bottom: 1px solid #536279;
+  color: #536279;
+}
+
+.m-2{
+  padding: 40px 0;
+}
+
+.link{
+  text-decoration: underline;
+  color: #536279;
+}
+
+.link:hover{
+  color: #f89c49;
+}
+
+.text{
+    color: #536279;
+}
+
+.btn-inline{
+  display: flex;
+  flex-direction: row;
+}
+
+.mr-30{
+  margin-right: 30px;
+}
