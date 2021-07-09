@@ -205,7 +205,7 @@ footer .footer-links a:hover {
   padding: 10px 15px!important;
 } */
 
-.elements-table th, .s-table th{
+.elements-table th, .s-table th, .table th{
   border-collapse: collapse;
   margin: 0;
   text-decoration: none;
@@ -223,6 +223,15 @@ footer .footer-links a:hover {
   white-space: nowrap;
   font-size: 12px;
   text-align: center;
+}
+
+.table td{
+  text-align: center;
+  border-bottom: 2px #536279 solid;
+}
+
+.table td.no-underline{
+  border: none;
 }
 
 .s-table thead td{
