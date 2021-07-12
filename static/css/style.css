@@ -457,3 +457,47 @@ td.table-input select{
   color: #536279;
   margin: 10px;
 }
+
+.preview{
+  text-align: center;
+}
+
+.preview img{
+  max-width: 100%;
+}
+
+.arrow{
+  max-height: 100px;
+}
+
+.title_4{
+  color: #294063;
+  margin: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.title_5{
+  text-align: center;
+  color: #536279;
+  margin: 10px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.left{
+  float: left;
+  width: calc(66.66% - 25px);
+  padding-right: 10px;
+}
+
+.right{
+  float: left;
+  width: calc(33.33% - 25px);
+}
+
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
