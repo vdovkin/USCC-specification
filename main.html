@@ -77,8 +77,8 @@
     <div class="container-100">
       <div class="text-information">
         <div class="title-block">
-          <h1>Спцифікація металопрокату</h1>
-          <p>Формування спцифікації метлопрокату та перевірка наявних позицій на складах</p>
+          <h1>Специфікація металопрокату</h1>
+          <p>Внесіть дані відповідно до вашого проекту</p>
           </p>
         </div>
       </div>
@@ -87,21 +87,20 @@
   <section class="main">
     <div class="container-100">
       <div>
-        <input type="text" class="input" placeholder="Назва проэкту">
+        <p><strong>Назва:</strong> Проект 1 <span class="symbol-copy"><i class="fas fa-edit"></i></span> </p>
       </div>
       <div class="group-input mt-20">
-        <h2>Ведіть назви груп конструкцій</h2>
-        <p>(Наявні групи: колони, балки, в'язі)<span class="symbol-copy"><i class="fas fa-edit"></i></span></p>
-        <input type="text" class="input" placeholder="Назва групи">
-        <span class="platform_add_symbol_header">+</span>
+        <p><strong>Групи конструкцій:</strong> Колони, балки, в'язі, інше <span class="symbol-copy"><i
+              class="fas fa-edit"></i></span> </p>
+
       </div>
-      <div class="swith">
+      <div class="swith mt-20">
         <div class="btn-swith active" onclick="changeTable('procat')" id='procat-swith'>Прокатні елементи</div>
-        <div class="btn-swith not-active" onclick="changeTable('zvarni')" id='zvarni-swith'>Зварні елементи</div> 
+        <div class="btn-swith not-active" onclick="changeTable('zvarni')" id='zvarni-swith'>Зварні елементи</div>
       </div>
 
       <div class="prokat" id='procatTable'>
-        <h2>Таблиця прокатних елементів<span class="add_symbol">+</span></h2>
+        <h2>Таблиця прокатних елементів</h2>
         <br>
         <table class="elements-table">
           <thead>
@@ -161,7 +160,10 @@
                 <span class="symbol-copy"><i class="far fa-copy"></i></span>
               </td>
               <td>
-                <span class="symbol">-</span>                
+                <span class="symbol">+</span>
+              </td>
+              <td>
+                <span class="symbol">-</span>
               </td>
 
             </tr>
@@ -211,7 +213,10 @@
                 <span class="symbol-copy"><i class="far fa-copy"></i></span>
               </td>
               <td>
-                <span class="symbol">-</span>                
+                <span class="symbol">+</span>
+              </td>
+              <td>
+                <span class="symbol">-</span>
               </td>
 
             </tr>
@@ -261,7 +266,10 @@
                 <span class="symbol-copy"><i class="far fa-copy"></i></span>
               </td>
               <td>
-                <span class="symbol">-</span>                
+                <span class="symbol">+</span>
+              </td>
+              <td>
+                <span class="symbol">-</span>
               </td>
 
             </tr>
@@ -270,7 +278,7 @@
       </div>
 
       <div class="zvarni hide" id='zvarniTable'>
-        <h2>Таблиця зварних елементів<span class="add_symbol">+</span></h2>
+        <h2>Таблиця зварних елементів</h2>
         <br>
         <table class="elements-table">
           <thead>
@@ -295,11 +303,11 @@
             <tr>
               <td class="table-input"> <input type="text" value="Б2"></td>
               <td class="table-input"> <select>
-                <option value="g1">Колони</option>
-                <option value="g2" selected>Балки</option>
-                <option value="g3">В'язі</option>
-              </select>
-            </td>
+                  <option value="g1">Колони</option>
+                  <option value="g2" selected>Балки</option>
+                  <option value="g3">В'язі</option>
+                </select>
+              </td>
               <td class="table-input"> <select>
                   <option value="1">Двутавровий</option>
                   <option value="2">Коробчатий</option>
@@ -332,17 +340,20 @@
                 <span class="symbol-copy"><i class="far fa-copy"></i></span>
               </td>
               <td>
-                <span class="symbol">-</span>                
+                <span class="symbol">+</span>
+              </td>
+              <td>
+                <span class="symbol">-</span>
               </td>
             </tr>
             <tr>
               <td class="table-input"> <input type="text" value="Б2"></td>
               <td class="table-input"> <select>
-                <option value="g1">Колони</option>
-                <option value="g2" selected>Балки</option>
-                <option value="g3">В'язі</option>
-              </select>
-            </td>
+                  <option value="g1">Колони</option>
+                  <option value="g2" selected>Балки</option>
+                  <option value="g3">В'язі</option>
+                </select>
+              </td>
               <td class="table-input"> <select>
                   <option value="1">Двутавровий</option>
                   <option value="2">Коробчатий</option>
@@ -375,7 +386,60 @@
                 <span class="symbol-copy"><i class="far fa-copy"></i></span>
               </td>
               <td>
-                <span class="symbol">-</span>                
+                <span class="symbol">+</span>
+              </td>
+              <td>
+                <span class="symbol">-</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-input"> <input type="text" ></td>
+              <td class="table-input"> <select>
+                  <option>Не вибрано</option>
+                  <option value="g1">Колони</option>
+                  <option value="g2">Балки</option>
+                  <option value="g3">В'язі</option>
+                </select>
+              </td>
+              <td class="table-input"> <select>
+                  <option>Не вибрано</option>
+                  <option value="1">Двутавровий</option>
+                  <option value="2">Коробчатий</option>
+                </select>
+              </td>
+              <td class="table-input"> <input type="number" ></td>
+              <td class="table-input"> <input type="number" ></td>
+              <td class="table-input">
+                <select>
+                  <option>Не вибрано</option>
+                  <option value="m1">C235</option>
+                  <option value="m2">C245</option>
+                  <option value="m3">C255</option>
+                  <option value="m4">C355</option>
+                </select>
+              </td>
+              <td class="table-input"> <input type="number"></td>
+              <td class="table-input"> <input type="number" ></td>
+              <td class="table-input">
+                <select>
+                  <option>Не вибрано</option>
+                  <option value="m1">C235</option>
+                  <option value="m2">C245</option>
+                  <option value="m3">C255</option>
+                  <option value="m4">C355</option>
+                </select>
+              </td>
+              <td class="table-input">
+                <input type="nubmer">
+              </td>
+              <td>
+                <span class="symbol-copy"><i class="far fa-copy"></i></span>
+              </td>
+              <td>
+                <span class="symbol">+</span>
+              </td>
+              <td>
+                <span class="symbol">-</span>
               </td>
             </tr>
           </tbody>
@@ -384,7 +448,7 @@
       </div>
 
       <div class="btn-inline mt-20">
-        
+
         <a href="results" class="btn-orange mr-30">Сформувати специфікацію</a>
         <a href="#" class="btn-orange">Зберегти дані по проекту</a>
       </div>
