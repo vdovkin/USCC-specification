@@ -502,3 +502,32 @@ td.table-input select{
   display: table;
   clear: both;
 }
+
+.mb-20{
+  padding-bottom: 20px;
+}
+
+.login-ul-custom li {
+  color: white;
+}
+
+.members .info .right .btn-orange{
+  width: min-content;
+}
+
+.members .info .right .consult_form_chackbox_container label {
+  color: white;
+}
+
+.members .info .right  .check-box:before{
+  border-color: white;
+}
+
+.login-ul-link a{
+  color: white;
+}
+
+.login-ul-link li{
+  list-style: circle;
+  color: white;
+}
