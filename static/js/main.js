@@ -26,3 +26,13 @@ function changeTable(table){
   }
   
 }
+
+function show(name){
+  let someField = document.getElementById(name);
+  someField.classList.remove("hide");
+}
+
+function hide(name){
+  let someField = document.getElementById(name);
+  someField.classList.add("hide");
+}

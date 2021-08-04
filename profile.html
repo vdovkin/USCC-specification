@@ -86,18 +86,26 @@
     <div class="container-100">
       <div class="text-information">
         <div class="title-block">
-          <h2 class="title_3 mt-20">Ім'я профілю: Engineer <span class="symbol-copy"><i class="fas fa-edit"></i></span>
+          <h2 class="title_3 mt-20 mb-20">Ім'я профілю: <span class="simple">Engineer</span> <span class="symbol-copy" onclick="show('profile_name')"><i class="fas fa-edit"></i></span>
           </h2>
-          <h2 class="title_3 mt-20">Email: engineer@gmail.com <span class="symbol-copy"><i
+          <div class="btn-inline mb-20 ml-10 hide" id='profile_name'>
+            <input type="text" placeholder="Нове ім'я профілю" class="input mr-30"><a href="#" class="btn-orange" onclick="hide('profile_name')">Зберегти</a>
+          </div>
+          <h2 class="title_3 mt-20 mb-20">Email: <span class="simple">engineer@gmail.com</span> <span class="symbol-copy" onclick="show('profile_email')"><i
                 class="fas fa-edit"></i></span></h2>
-          <h2 class="title_3 mt-20">Пароль: ********** <span class="symbol-copy"><i class="fas fa-edit"></i></span></h2>
-
+                <div class="btn-inline mb-20 ml-10 hide" id='profile_email'>
+                  <input type="text" placeholder="Новий email" class="input mr-30"><a href="#" class="btn-orange" onclick="hide('profile_email')">Зберегти</a>
+                </div>
+          <h2 class="title_3 mt-20 mb-20">Пароль: <span class="simple">**********</span> <span class="symbol-copy" onclick="show('profile_password')"><i class="fas fa-edit"></i></span></h2>
+          <div class="btn-inline mb-20 ml-10 hide" id='profile_password'>
+            <input type="text" placeholder="Новий пароль" class="input mr-30"><a href="#" class="btn-orange" onclick="hide('profile_password')">Зберегти</a>
+          </div>
         </div>
       </div>
 
 
       <div>
-        <a href="account" class="btn-orange mt-20">Зберегти</a>
+        <a href="account" class="btn-orange mt-20">Повернутись до особистого кабінету</a>
       </div>
 
 

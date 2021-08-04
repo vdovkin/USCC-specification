@@ -160,7 +160,7 @@ footer .footer-links a:hover {
   }
 
   .hide{
-    display: none;
+    display: none!important;
 }
   
 .platform_add_symbol_header {
@@ -530,4 +530,12 @@ td.table-input select{
 .login-ul-link li{
   list-style: circle;
   color: white;
+}
+
+.ml-10{
+  margin-left: 10px;
+}
+
+.simple{
+  font-weight: 400;
 }
