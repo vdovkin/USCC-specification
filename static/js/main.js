@@ -36,3 +36,16 @@ function hide(name){
   let someField = document.getElementById(name);
   someField.classList.add("hide");
 }
+
+function copyLine(element){
+  let row = element.parentElement.parentElement;
+  let name = row.firstElementChild.innerText;
+  let rowHTML = row.innerHTML;
+  row.insertAdjacentHTML('afterend', rowHTML.replace(name, name + '_copy'));
+}
+
+
+function deleteLine(element){
+  let row = element.parentElement.parentElement;
+  row.remove();
+}

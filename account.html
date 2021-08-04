@@ -79,7 +79,8 @@
     <div class="container-100">
       <div class="text-information">
         <div class="title-block">
-          <h2>Ім'я профілю: Engineer <a href="profile" class="link">[редагувати профіль]</a></h2>
+          <h2>Ім'я профілю: <span class="simple">Engineer <a href="profile" class="link">[редагувати профіль]</a></span>
+          </h2>
           </p>
         </div>
       </div>
@@ -89,8 +90,8 @@
     <div class="container-100">
 
       <div class="procects">
-        <h2 class="title_2">Поточні проекти</h2>
-        <table class="table">
+        <h2 class="title_2 mb-20">Поточні проекти</h2>
+        <table class="table-projects">
           <thead>
             <tr>
               <th>Назва</th>
@@ -103,25 +104,47 @@
               <td>Склад</td>
               <td>231,2</td>
               <td>12/07/2021</td>
-              <td class="no-underline"><a href="main" class="btn-orange">Редагувати</a></td>
-              <td class="no-underline"><a href="#" class="btn-orange">Скопіювати</a></td>
-              <td class="no-underline"><a href="#" class="btn-orange">Видалити</a></td>
+              <td class="no-underline">
+                <a class="symbol-copy" href="main"><i class="fas fa-edit"></i></a>
+              </td>
+              <td class="no-underline">
+                <span class="symbol-copy" onclick="copyLine(this)"><i class="far fa-copy"></i></span>
+              </td>
+              <td class="no-underline">
+                <span class="symbol" onclick="deleteLine(this)">-</span>
+              </td>
             </tr>
             <tr>
               <td>Адмін. будівля</td>
               <td>331,2</td>
               <td>1/05/2021</td>
-              <td class="no-underline"><a href="main" class="btn-orange">Редагувати</a></td>
+              <!-- <td class="no-underline"><a href="main" class="btn-orange">Редагувати</a></td>
               <td class="no-underline"><a href="#" class="btn-orange">Скопіювати</a></td>
-              <td class="no-underline"><a href="#" class="btn-orange">Видалити</a></td>
+              <td class="no-underline"><a href="#" class="btn-orange">Видалити</a></td> -->
+              <td class="no-underline">
+                <a class="symbol-copy" href="main"><i class="fas fa-edit"></i></a>
+              </td>
+              <td class="no-underline">
+                <span class="symbol-copy" onclick="copyLine(this)"><i class="far fa-copy"></i></span>
+              </td>
+              <td class="no-underline">
+                <span class="symbol" onclick="deleteLine(this)">-</span>
+              </td>
             </tr>
             <tr>
               <td>Будинок в с.Гатне</td>
               <td>31,2</td>
               <td>11/03/2021</td>
-              <td class="no-underline"><a href="main" class="btn-orange">Редагувати</a></td>
-              <td class="no-underline"><a href="#" class="btn-orange">Скопіювати</a></td>
-              <td class="no-underline"><a href="#" class="btn-orange">Видалити</a></td>
+              <td class="no-underline">
+                <a class="symbol-copy" href="main"><i class="fas fa-edit"></i></a>
+              </td>
+              <td class="no-underline">
+                <span class="symbol-copy" onclick="copyLine(this)"><i class="far fa-copy"></i></span>
+              </td>
+              <td class="no-underline">
+                <span class="symbol" onclick="deleteLine(this)">-</span>
+              </td>
+
             </tr>
 
 

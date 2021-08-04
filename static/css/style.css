@@ -205,7 +205,7 @@ footer .footer-links a:hover {
   padding: 10px 15px!important;
 } */
 
-.elements-table th, .s-table th, .table th{
+.elements-table th, .s-table th, .table-projects th{
   border-collapse: collapse;
   margin: 0;
   text-decoration: none;
@@ -225,12 +225,32 @@ footer .footer-links a:hover {
   text-align: center;
 }
 
-.table td{
-  text-align: center;
-  border-bottom: 2px #536279 solid;
+.table-projects tr{
+  height: 20px;
 }
 
-.table td.no-underline{
+
+.table-projects td{
+  text-align: center;
+  border-bottom: 2px #536279 solid;
+  /* line-height: 2; */
+  padding: 10px;
+}
+
+td.no-underline{
+  padding: 2px;
+}
+
+td.no-underline a{
+  color: #000;
+}
+
+td.no-underline a:hover{
+  color:#f89c49;
+}
+
+
+.table-projects td.no-underline{
   border: none;
 }
 
