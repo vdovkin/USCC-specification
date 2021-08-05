@@ -559,3 +559,7 @@ td.table-input select{
 .simple{
   font-weight: 400;
 }
+
+.center{
+  text-align: center;
+}
